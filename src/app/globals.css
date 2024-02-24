@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 
+.sidebar {
+    width: 150px;
+    background-color: rgb(24, 24, 24);
+    padding: 2rem;
+}

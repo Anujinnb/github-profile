@@ -1,18 +1,25 @@
 "use client";
-import { NextUIProvider } from "@nextui-org/react";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  Link,
-  Button,
-} from "@nextui-org/react";
+import { NextUIProvider, Link } from "@nextui-org/react";
 
 export default function Home() {
   return (
     <NextUIProvider>
-      <div>Hello</div>
+      <div className="flex h-screen">
+        <div className="sidebar">
+          <Link href="#" className="text-white">
+            Profile
+          </Link>
+          <Link href="#" className="text-white">
+            Data
+          </Link>
+          <Link href="#" className="text-white">
+            Commits
+          </Link>
+          <Link href="#" className="text-white">
+            Settings
+          </Link>
+        </div>
+      </div>
     </NextUIProvider>
   );
 }
